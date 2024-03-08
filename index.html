@@ -1,44 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Demo</title>
-    <link rel="stylesheet" href="app.css">
-    <script src="app.js"></script>
+    <title>Budgeting Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript/calculator.js"></script>
+    <script src="JavaScript/utils.js"></script>
+    <link rel="icon" type="image/EECU-Logo" href="/img/EECU-removebg-preview.png">
+
 </head>
+
 <body>
-    <div class="pagewrapper">
+    <h1>Smart Budgeting Calculator</h1>
 
-        <section class="left">
+    <section class="row-wrap">
+        <section class="expenses">
 
-            <div class="certificate " id="certificate">
-                <span id="nameOutput" class="visible">Test Name</span>
-                <span id="info">Test Info</span><br>
-                <span id="theDate">Is Now</span>
-            </div>
+            <h2>Expenses</h2><br>
+            <h2>(or input profession)</h2>
+
+            <div id="root"></div>
+
+            <label>Annual Income
+                <input type="text" id="income" value="0">
+            </label>
+
+            <h2>Gross Monthly</h2>
+            <span id="gross-monthly"></span>
+            <h2>Taxes</h2>
+            <span id="taxes"></span>
+            <h2>Net Monthly</h2>
+            <span id="net-monthly"></span>
 
         </section>
 
-        <section class="right">
+        <section class="expenses">
+            <h2>Budget</h2>
 
-            <form action="" id="myForm">
-    
-                <input type="text" name="name" id="name" placeholder="Name">
-        
-                <select name="type" id="type">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                </select>
-                <input type="submit" value="Generate">
-                <input type="button" value="Print" id="print">
-                <input type="button" value="altPrint" onclick="window.print()">
-        
-            </form>
+            <section class="colors">
+            </section>
+
+            <section class="spending">
+                <section>
+                    <section class="sec1">
+                        <div class="housing-color"></div>
+                        <p>Necessities</p>
+                    </section>
+                    <p id="spendHousing">$0</p>
+                </section>
+
+                <section>
+                    <section class="sec1">
+                        <div class="food-color"></div>
+                        <p>Wants</p>
+                    </section>
+                    <p id="spendFood">$0</p>
+                </section>
+
+                <section>
+                    <section class="sec1">
+                        <div class="enter-color"></div>
+                        <p>Savings and Debt</p>
+                    </section>
+                    <p id="spendEnter">$0</p>
+                </section>
+
+            </section>
+
         </section>
 
-    </div>    
+        <section class="expenses">
+            <h2>Budgeting Breakdown</h2>
+
+            <section class="table">
+                <section class="breakdown">
+                    <section class="breakdownrow">
+                        <div class="brklabel housing-color"></div>
+                        <p>Necessities</p>
+                    </section>
+                    <section class="breakdownrow">
+                        <div class="brklabel food-color"></div>
+                        <p>Wants</p>
+                    </section>
+                    <section class="breakdownrow">
+                        <div class="brklabel enter-color"></div>
+                        <p>Savings and Debt</p>
+                    </section>
+
+                </section>
+                <table>
+                    <tr></tr>
+                    <td>Total Monthly Income</td>
+                    <td>$0</td>
+                    </tr>
+                    <td>Total Monthly Expenses</td>
+                    <td>$0</td>
+                    </tr>
+                    <td>Remaining Monthly Funds</td>
+                    <td>$0</td>
+
+                </table>
+            </section>
+        </section>
+
+    </section>
+
+    <section class="about">
+        <h2>About this calculator</h2>
+        <br>
+        <p>The Budgeting Calculator is a user-friendly tool that simplifies financial management by allowing users to
+            input income, expenses, and savings goals, customize their budgets, track progress, receive personalized
+            recommendations, and analyze detailed budgets. <em> <strong>Your data is entirely safe with us. We do not
+                    steal or
+                    sell
+                    your data.</em></strong>
+        </p>
+    </section>
+
+    <footer>
+        <h2>2024 Center for Advanced Research and Technology</h2>
+        <p>Any issues in the operation of this product are entirely of skill-based origin.</p>
+    </footer>
 </body>
+
 </html>
